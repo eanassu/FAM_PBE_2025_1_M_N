@@ -1,0 +1,5 @@
+/*C1*/SET SCHEMA SYSTEM_LOBS
+INSERT INTO BLOCKS VALUES(0,2147483647,0)
+COMMIT
+/*C2*/SET SCHEMA PUBLIC
+create table Alunos(\u000ara int,\u000anome varchar(50),\u000adataNascimento date,\u000arenda decimal(15,2),\u000aprimary key(ra))
