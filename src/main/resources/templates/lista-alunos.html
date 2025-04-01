@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="UTF-8">
+<title>Lista de Alunos</title>
+</head>
+<body>
+<table border='1'>
+<tr>
+<th>RA</th><th>Nome</th><th>Data de Nascimento</th><th>Renda</th>
+</tr>
+<tr th:each="aluno: ${alunos}">
+  <td th:text="${aluno.ra}">RA</td>
+  <td th:text="${aluno.nome}">Nome</td>
+  <td th:text="${#dates.format(aluno.dataNascimento,'dd/MM/yyyy')}">data</td>
+  <td th:text="${#numbers.formatCurrency(aluno.renda)}">renda</td>
+</tr>
+</table>
+<a href="/alunos">voltar</a>
+</body>
+</html>
