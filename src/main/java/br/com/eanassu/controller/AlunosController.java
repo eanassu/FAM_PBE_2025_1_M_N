@@ -11,8 +11,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import br.com.eanassu.dao.DaoAluno;
 import br.com.eanassu.pojo.Aluno;
-import org.springframework.web.bind.annotation.RequestParam;
-
 
 @Controller
 @RequestMapping("/alunos")
